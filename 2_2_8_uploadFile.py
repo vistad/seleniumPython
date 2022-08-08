@@ -22,7 +22,7 @@ try:
     current_dir = os.path.abspath(os.path.dirname(__file__))            # get the current path
     print(f"{current_dir}")
 
-    file_path = os.path.join(current_dir, 'test_01.txt')                # add a filename to the current dir path
+    file_path = os.path.join(current_dir, '2_2_8_uploadFile.txt')                # add a filename to the current dir path
 
     input4 = browser.find_element(By.CSS_SELECTOR, 'input[type="file"]')
     input4.send_keys(file_path)

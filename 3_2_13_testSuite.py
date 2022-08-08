@@ -29,7 +29,6 @@ try:
             self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Should be same text")
 
 
-
         def test_registration2(self):
             link = "http://suninjuly.github.io/registration2.html"
             browser.get(link)
