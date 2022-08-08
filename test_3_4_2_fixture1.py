@@ -1,3 +1,5 @@
+# a browser for a test suite or separate tests
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 link = "http://selenium1py.pythonanywhere.com/"
