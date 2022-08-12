@@ -5,4 +5,4 @@ This repo stores Selenium Python scripts illustrating usage of various test auto
 1st successful ssh push was executed.
 dots in filenames replaced with underscores, the repo is recreated.
 fixtures added
-# pytest filenames are shortened
+pytest filenames are shortened
