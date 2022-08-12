@@ -1,5 +1,5 @@
 # @pytest.mark.xfail decoration is used to mark expected failing tests
-# pytest -v ~/seleniumPy/seleniumPython/test_3_5_5_markXFail.py
+# pytest -v ~/seleniumPy/seleniumPython/test3_5_5_markXFail.py
 # the result will be: 2 passed, 1 xfailed
 
 import pytest

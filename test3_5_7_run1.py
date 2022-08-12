@@ -1,4 +1,4 @@
-# pytest -v -m "smoke and not beta_users" ~/seleniumPy/seleniumPython/test_3_5_7_run1.py
+# pytest -v -m "smoke and not beta_users" ~/seleniumPy/seleniumPython/test3_5_7_run1.py
 
 import pytest
 

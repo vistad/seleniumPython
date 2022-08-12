@@ -1,4 +1,4 @@
-# pytest -s -v ~/seleniumPy/seleniumPython/test_3_6_2_parametrizeClass.py
+# pytest -s -v ~/seleniumPy/seleniumPython/test3_6_2_paramClass.py
 
 import pytest
 from selenium import webdriver

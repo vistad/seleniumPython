@@ -1,7 +1,7 @@
 # marks should be registered in pytest.ini file
 # Select and run only specific tests
 # e.g. to run smoke-tests only for Windows 10, use logic AND:
-# pytest -s -v -m "smoke and win10" ~/seleniumPy/seleniumPython/test_3_5_3_markAnd.py
+# pytest -s -v -m "smoke and win10" ~/seleniumPy/seleniumPython/test3_5_3_markAnd.py
 # it will run test_guest_should_see_basket_link_on_the_main_page
 
 import pytest
