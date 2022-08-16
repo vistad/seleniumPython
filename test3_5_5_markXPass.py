@@ -1,6 +1,6 @@
 # @pytest.mark.xfail decoration is used to mark expected failing tests
 # but the bug was fixed and now this test unexpectedly passes
-# pytest -rX -v ~/seleniumPy/seleniumPython/test3_5_5_markXPass.py
+# pytest -rX -v test3_5_5_markXPass.py
 # the result will be: 2 passed, 1 xpassed
 
 import pytest

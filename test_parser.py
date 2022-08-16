@@ -1,3 +1,7 @@
+# pytest -v -s test_parser.py
+
+from selenium.webdriver.common.by import By
+
 link = "http://selenium1py.pythonanywhere.com/"
 
 

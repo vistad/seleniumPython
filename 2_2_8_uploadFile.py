@@ -28,7 +28,7 @@ try:
     input4.send_keys(file_path)
 
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
-    button.click()                                                      #upload the file
+    button.click()                                                      # upload the file
 
 
 finally:

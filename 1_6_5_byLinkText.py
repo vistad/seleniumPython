@@ -11,8 +11,8 @@ try:
     browser.get(link)
 
     link = browser.find_element(By.LINK_TEXT, (secret_link))
-    #or link = browser.find_element(By.LINK_TEXT, '224592')
-    #or link = browser.find_element(By.LINK_TEXT, (str(math.ceil(math.pow(math.pi, math.e)*10000))))
+    # or link = browser.find_element(By.LINK_TEXT, '224592')
+    # or link = browser.find_element(By.LINK_TEXT, (str(math.ceil(math.pow(math.pi, math.e)*10000))))
     print(link)
     link.click()
 

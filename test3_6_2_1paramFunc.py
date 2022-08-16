@@ -1,4 +1,4 @@
-# pytest -s -v ~/seleniumPy/seleniumPython/test3_6_21_paramFunc.py
+# pytest -s -v test3_6_21_paramFunc.py
 
 import pytest
 from selenium import webdriver

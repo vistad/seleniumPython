@@ -1,9 +1,9 @@
 # marks should be registered in pytest.ini file
 # the inversion command to start all tests except for e.g. smoke or regression
 # otherwise OR can be used, like smoke or regression
-# pytest -v -s -m "not smoke" ~/seleniumPy/seleniumPython/test3_5_2_marks.py
-# pytest -v -s -m "not regression" ~/seleniumPy/seleniumPython/test3_5_2_marks.py
-# pytest -v -s -m "smoke or regression" ~/seleniumPy/seleniumPython/test3_5_2_marks.py
+# pytest -v -s -m "not smoke" test3_5_2_marks.py
+# pytest -v -s -m "not regression" test3_5_2_marks.py
+# pytest -v -s -m "smoke or regression" test3_5_2_marks.py
 
 import pytest
 from selenium import webdriver

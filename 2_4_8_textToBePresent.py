@@ -16,24 +16,24 @@ try:
 
     expectedPrice = WebDriverWait(browser, 12).until(
         EC.text_to_be_present_in_element((By.ID, 'price'), "$100")
-    )                                                       #check for 12 sec for the price to drop to $100
+    )                                                       # check for 12 sec for the price to drop to $100
 
     button = browser.find_element(By.ID, "book")
-    button.click()                                          #press the Book button
+    button.click()                                          # press the Book button
     
 
-    fnum = browser.find_element(By.CSS_SELECTOR, "#input_value")    #get the value
+    fnum = browser.find_element(By.CSS_SELECTOR, "#input_value")    # get the value
     x = int(fnum.text)
-    y = calc(x)                                                     #calculate
+    y = calc(x)                                                     # calculate
     print(x)
     print(y)
 
     input1 = browser.find_element(By.ID, 'answer')
-    input1.send_keys(y)                                             #input the value
+    input1.send_keys(y)                                             # input the value
 
 
-    button = browser.find_element(By.CSS_SELECTOR, "button[type='submit']")     #find the button
-    button.click()                                                  #submit
+    button = browser.find_element(By.CSS_SELECTOR, "button[type='submit']")     # find the button
+    button.click()                                                  # submit
 
 
 finally:

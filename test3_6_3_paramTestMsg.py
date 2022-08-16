@@ -1,4 +1,4 @@
-# pytest -s -v ~/seleniumPy/seleniumPython/test_3_6_2_parametrizeClass.py
+# pytest -s -v test_3_6_2_parametrizeClass.py
 # The owls are not what they seem! OvO
 
 import pytest

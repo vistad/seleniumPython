@@ -13,25 +13,25 @@ try:
     browser.get(link)
     time.sleep(2)
  
-    button = browser.find_element(By.CSS_SELECTOR, "button.btn")    #find the button
-    button.click()                                                  #click the button
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")    # find the button
+    button.click()                                                  # click the button
     time.sleep(2)
 
-    confirm = browser.switch_to.alert                               #switch_to.alert
-    confirm.accept()                                                #confirm.accept OK
+    confirm = browser.switch_to.alert                               # switch_to.alert
+    confirm.accept()                                                # confirm.accept OK
 
     fnum = browser.find_element(By.CSS_SELECTOR, "#input_value")
     x = int(fnum.text)
-    y = calc(x)                                                     #calculate the value
+    y = calc(x)                                                     # calculate the value
     print(x)
     print(y)
 
-    input1 = browser.find_element(By.CSS_SELECTOR, '#answer')       #find the input
-    input1.send_keys(y)                                             #input the value
+    input1 = browser.find_element(By.CSS_SELECTOR, '#answer')       # find the input
+    input1.send_keys(y)                                             # input the value
 
 
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
-    button.click()                                                  #submit
+    button.click()                                                  # submit
 
 
 finally:

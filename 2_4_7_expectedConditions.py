@@ -12,7 +12,7 @@ try:
 
     button = WebDriverWait(browser, 5).until(
         EC.element_to_be_clickable((By.ID, "verify"))
-    )                                                       #check for 5 sec if the button becomes clickable
+    )                                                       # check for 5 sec if the button becomes clickable
 
     button.click()
     message = browser.find_element(By.ID, "verify_message")

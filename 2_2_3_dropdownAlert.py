@@ -17,13 +17,13 @@ try:
 
     x = int(fnum.text)
     y = int(snum.text)
-    z = sum(x, y)                                           #add numbers
+    z = sum(x, y)                                           # add numbers
     print(x)
     print(y)
     print(z)
 
-    browser.find_element(By.TAG_NAME, "select").click()                 #open the dropdown list
-    browser.find_element(By.CSS_SELECTOR, (f"[value='{z}']")).click()   #select the calculated number
+    browser.find_element(By.TAG_NAME, "select").click()                 # open the dropdown list
+    browser.find_element(By.CSS_SELECTOR, (f"[value='{z}']")).click()   # select the calculated number
 
 
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")

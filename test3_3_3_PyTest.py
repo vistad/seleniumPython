@@ -1,6 +1,6 @@
-#a few tests in the test-suite
-#passes test_registration1
-#fails test_registration2
+# a few tests in the test-suite
+# passes test_registration1
+# fails test_registration2
 
 
 from selenium import webdriver
@@ -14,13 +14,13 @@ class TestRegistration(unittest.TestCase):
         browser = webdriver.Chrome()
         link = "http://suninjuly.github.io/registration1.html"
         browser.get(link)
-        browser.implicitly_wait(2)                  #wait for page to load
+        browser.implicitly_wait(2)                  # wait for page to load
         browser.find_element(By.CSS_SELECTOR, '.first_block .first').send_keys('John')
         browser.find_element(By.CSS_SELECTOR, '.first_block .second').send_keys('Doe')
         browser.find_element(By.CSS_SELECTOR, '.first_block .third').send_keys('11111@email.com')
         browser.find_element(By.CSS_SELECTOR, "button.btn").click()
-        welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      #find the webelement with the text
-        welcome_text = welcome_text_elt.text        #store webelement text to the var            
+        welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      # find the webelement with the text
+        welcome_text = welcome_text_elt.text        # store webelement text to the var            
         assert"Congratulations! You have successfully registered!", welcome_text
         browser.quit()
 
@@ -30,13 +30,13 @@ class TestRegistration(unittest.TestCase):
         browser = webdriver.Chrome()
         link = "http://suninjuly.github.io/registration2.html"
         browser.get(link)
-        browser.implicitly_wait(2)                  #wait for page to load
+        browser.implicitly_wait(2)                  # wait for page to load
         browser.find_element(By.CSS_SELECTOR, '.first_block .first').send_keys('John')
         browser.find_element(By.CSS_SELECTOR, '.first_block .second').send_keys('Doe')
         browser.find_element(By.CSS_SELECTOR, '.first_block .third').send_keys('11111@email.com')
         browser.find_element(By.CSS_SELECTOR, "button.btn").click()
-        welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      #find the webelement with the text
-        welcome_text = welcome_text_elt.text        #store webelement text to the var            
+        welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      # find the webelement with the text
+        welcome_text = welcome_text_elt.text        # store webelement text to the var            
         assert"Congratulations! You have successfully registered!", welcome_text
         browser.quit()
 

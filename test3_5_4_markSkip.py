@@ -1,5 +1,5 @@
 # @pytest.mark.skip decoration is used to skip certain tests
-# pytest -s -v ~/seleniumPy/seleniumPython/test3_5_4_markSkip.py
+# pytest -s -v test3_5_4_markSkip.py
 # the result will be: 1 passed, 1 skipped
 
 import pytest

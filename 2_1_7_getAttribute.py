@@ -11,24 +11,23 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
  
-    # код
-
-    chest_treasure = browser.find_element(By.ID, "treasure")            #find the element that stores the "valuex"
-    x = chest_treasure.get_attribute("valuex")                          #get_attribute
-    y = calc(x)                                                         #calculate
+ 
+    chest_treasure = browser.find_element(By.ID, "treasure")            # find the element that stores the "valuex"
+    x = chest_treasure.get_attribute("valuex")                          # get_attribute
+    y = calc(x)                                                         # calculate
     print(x)
     print(y)
 
-    input1 = browser.find_element(By.CSS_SELECTOR, '#answer')           #input the answer
+    input1 = browser.find_element(By.CSS_SELECTOR, '#answer')           # input the answer
     input1.send_keys(y)
 
-    robox = browser.find_element(By.CSS_SELECTOR, '#robotCheckbox')     #check the box
+    robox = browser.find_element(By.CSS_SELECTOR, '#robotCheckbox')     # check the box
     robox.click()
 
-    robtn = browser.find_element(By.CSS_SELECTOR, '#robotsRule')        #press the radiobutton
+    robtn = browser.find_element(By.CSS_SELECTOR, '#robotsRule')        # press the radiobutton
     robtn.click()
 
-    button = browser.find_element(By.CSS_SELECTOR, "button.btn")        #Submit
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")        # Submit
     button.click()
 
 finally:

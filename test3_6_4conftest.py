@@ -1,7 +1,6 @@
 # this shows how the test file accesses the fixture "browser" in file conftest.py
+# pytest -s -v test3_6_4conftest.py
 
-import pytest
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"

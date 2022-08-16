@@ -4,7 +4,7 @@ import time
 
 link = "http://suninjuly.github.io/simple_form_find_task.html"
 
-try:        #the method try/finally guarantees quitting the browser in the Finally section even if the script fails in the Try section
+try:        # the method try/finally guarantees quitting the browser in the Finally section even if the script fails in the Try section
     browser = webdriver.Chrome()
     browser.get(link)
 

@@ -1,6 +1,6 @@
-#a few tests in the test-suite
-#passes test_registration1
-#fails test_registration2
+# a few tests in the test-suite
+# passes test_registration1
+# fails test_registration2
 
 
 from selenium import webdriver
@@ -36,11 +36,11 @@ try:
             browser.find_element(By.CSS_SELECTOR, ".first_block > div.form-group.second_class > input.form-control.second").send_keys('Test_name')
             browser.find_element(By.CSS_SELECTOR, ".first_block > div.form-group.third_class > input.form-control.third").send_keys('Test_name')
             button = browser.find_element(By.CSS_SELECTOR, "button.btn")
-            button.click()            #Submit the form
-            time.sleep(1)       #wait for the page to load
-            #check if the registration is successful
-            welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      #find the webelement with the text
-            welcome_text = welcome_text_elt.text        #store webelement text to the var
+            button.click()            # Submit the form
+            time.sleep(1)       # wait for the page to load
+            # check if the registration is successful
+            welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")      # find the webelement with the text
+            welcome_text = welcome_text_elt.text        # store webelement text to the var
             self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Should be same text")
 
             

@@ -14,10 +14,10 @@ try:
     time.sleep(3)
  
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
-    button.click()                                              #press the button to redirect to the new page
+    button.click()                                              # press the button to redirect to the new page
 
     new_window = browser.window_handles[1]
-    browser.switch_to.window(new_window)                        #switch to the new tab
+    browser.switch_to.window(new_window)                        # switch to the new tab
 
     fnum = browser.find_element(By.CSS_SELECTOR, "#input_value")
     x = int(fnum.text)
@@ -28,7 +28,7 @@ try:
     input1 = browser.find_element(By.CSS_SELECTOR, '#answer')
     input1.send_keys(y)
 
-    button = browser.find_element(By.CSS_SELECTOR, "button.btn")    #submit 
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")    # submit 
     button.click()
 
 

@@ -21,13 +21,13 @@ try:
     input1 = browser.find_element(By.CSS_SELECTOR, '#answer')
     input1.send_keys(y)
 
-    robox = browser.find_element(By.CSS_SELECTOR, '#robotCheckbox')     #click the checkbox 
+    robox = browser.find_element(By.CSS_SELECTOR, '#robotCheckbox')     # click the checkbox 
     robox.click()
 
-    robtn = browser.find_element(By.CSS_SELECTOR, '#robotsRule')     #click the radiobutton 
+    robtn = browser.find_element(By.CSS_SELECTOR, '#robotsRule')     # click the radiobutton 
     robtn.click()
 
-    button = browser.find_element(By.CSS_SELECTOR, "button.btn")     #submit the form
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")     # submit the form
     button.click()
 
 

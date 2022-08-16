@@ -1,5 +1,5 @@
-#this Test result output method prints the error message if the test has failed
-#or Everything passed message if all the tests have passed
+# this Test result output method prints the error message if the test has failed
+# or Everything passed message if all the tests have passed
 
 def test_abs1():
     assert abs(-42) == 42, "Should be absolute value of a number"

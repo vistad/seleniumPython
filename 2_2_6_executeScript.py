@@ -1,11 +1,11 @@
-#Открыть страницу http://SunInJuly.github.io/execute_script.html
-#Считать значение для переменной x.
-#Посчитать математическую функцию от x.
-#Проскроллить страницу вниз.
-#Ввести ответ в текстовое поле.
-#Выбрать checkbox "I'm the robot".
-#Переключить radiobutton "Robots rule!".
-#Нажать кнопку "Submit"
+# Открыть страницу http://SunInJuly.github.io/execute_script.html
+# Считать значение для переменной x.
+# Посчитать математическую функцию от x.
+# Проскроллить страницу вниз.
+# Ввести ответ в текстовое поле.
+# Выбрать checkbox "I'm the robot".
+# Переключить radiobutton "Robots rule!".
+# Нажать кнопку "Submit"
 
 
 from selenium import webdriver
@@ -21,7 +21,6 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
  
-    # код
 
     fnum = browser.find_element(By.CSS_SELECTOR, "#input_value")
     x = int(fnum.text)
@@ -37,7 +36,7 @@ try:
     robox.click()
 
     button = browser.find_element(By.TAG_NAME, ("button"))
-    browser.execute_script("return arguments[0].scrollIntoView(true);", button)     #execute_script
+    browser.execute_script("return arguments[0].scrollIntoView(true);", button)     # execute_script
 
     robtn = browser.find_element(By.CSS_SELECTOR, '#robotsRule')
     robtn.click()
